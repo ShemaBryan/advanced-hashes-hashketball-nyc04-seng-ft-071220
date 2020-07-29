@@ -139,8 +139,7 @@ def num_points_scored(player_name)
   end
  end
 end
-p "Jeff scored these points."
-p num_points_scored("Jeff Adrien")
+
 
 def shoe_size(sought_player_name)
   game_hash.each do |place, team|
