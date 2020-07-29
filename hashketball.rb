@@ -183,18 +183,18 @@ def player_numbers(team_name)
 nums
 end
 
-def player_stats(player_name, hashketball)
+def player_stats(player_name)
   player_name.capitalize!
-  if hashketball[:home][:players].include?(player_name)
-    hashketball[:home][:players][player_name][:stats]
-  elsif hashketball[:away][:players].include?(player_name)
-    hashketball[:away][:players][player_name][:stats]
+  if game_hash[:home][:players].include?(player_name)
+     game_hash[:home][:players][player_name][:stats]
+  elsif game_hash[:away][:players].include?(player_name)
+    game_hash[:away][:players][player_name][:stats]
   else
-    "No player found."
+
   end
 end
 
-puts player_stats("Daffy", hashketball)
+
 
 def big_shoe_rebounds
   biggest_shoe = 0
