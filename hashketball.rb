@@ -194,7 +194,7 @@ def player_stats(player_name, hashketball)
   end
 end
 
-
+puts player_stats("Daffy", hashketball)
 
 def big_shoe_rebounds
   biggest_shoe = 0
