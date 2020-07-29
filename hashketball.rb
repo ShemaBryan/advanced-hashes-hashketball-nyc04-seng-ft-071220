@@ -192,7 +192,7 @@ def player_stats(players_name)
       end
     end
   end
-  stats 
+  stats
 end
 
 player_stats("Jeff Adrien")
