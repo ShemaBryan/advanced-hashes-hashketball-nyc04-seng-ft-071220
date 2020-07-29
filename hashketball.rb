@@ -195,6 +195,8 @@ def player_stats(players_name)
   stats 
 end
 
+player_stats("Jeff Adrien")
+
 
 def big_shoe_rebounds
   biggest_shoe = 0
