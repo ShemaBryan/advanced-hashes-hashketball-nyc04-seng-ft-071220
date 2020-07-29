@@ -183,10 +183,17 @@ def player_numbers(team_name)
 nums
 end
 
-def player_stats(player_name)
-
+def player_stats(players_name)
+  stats={}
+  game_hash.each do |key,value|
+    value[:players].each do |player_info|
+      if player_info[:player_name] == players_name
+        stats= player_info
+      end
+    end
+  end 
+  stats 
 end
-
 
 
 def big_shoe_rebounds
