@@ -184,14 +184,7 @@ nums
 end
 
 def player_stats(player_name)
-  player_name.capitalize!
-  if game_hash[:home][:players].include?(player_name)
-     game_hash[:home][:players][player_name][:stats]
-  elsif game_hash[:away][:players].include?(player_name)
-    game_hash[:away][:players][player_name][:stats]
-  else
 
-  end
 end
 
 
